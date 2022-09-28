@@ -1,14 +1,15 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    jest: true
   },
   extends: ['plugin:react/recommended', 'standard-with-typescript'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['react', 'prettier'],
+  plugins: ['react', 'prettier', 'jest'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -23,6 +24,12 @@ module.exports = {
         trailingComma: 'none', // 후행 쉼표 추가
         useTabs: false // tab 대신 space 사용
       }
-    ]
+    ],
+    'jest/no-disabled-tests': 'warn',
+    'jest/no-focused-tests': 'error',
+    'jest/no-identical-title': 'error',
+    'jest/prefer-to-have-length': 'warn',
+    'jest/valid-expect': 'error'
+
   }
 }

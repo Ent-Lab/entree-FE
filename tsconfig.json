@@ -19,6 +19,14 @@
     "allowJs": true /* Allow javascript files to be compiled. Useful when migrating JS to TS */,
     "checkJs": true /* Report errors in .js files. Works in tandem with allowJs. */,
     "baseUrl": ".",
+    "types": [
+      "reflect-metadata",
+      "jest",
+      "@testing-library/jest-dom",
+      "@testing-library/react",
+      "@types/jest-plugin-context"
+    ],
+    "typeRoots": ["./types", "./node_modules/@types"],
     "paths": {
       "@/*": [
         "src/*"
@@ -27,10 +35,11 @@
   },
   "include": [
     "src/**/*",
-    "declarations.d.ts"
+    "declarations.d.ts",
+    "**/*.test.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
   ]
 }
 //  "compilerOptions": {
