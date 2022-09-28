@@ -2,7 +2,7 @@ import { InputProps } from "@/types/input";
 import { StyledInput } from "./Input.style";
 import { SIZES } from "./Input.variant";
 
-export default function Input({ label, value, size, type = 'text', placeholder, disabled, onChange }: InputProps) {
+export default function Input({ label, size, type, placeholder, disabled, onChange }: InputProps) {
   const sizeStyle = SIZES[size];
 
   return (
@@ -12,7 +12,6 @@ export default function Input({ label, value, size, type = 'text', placeholder, 
       </label>
       <StyledInput
         id={`${label}-input`}
-        value={value}
         sizeStyle={sizeStyle}
         type={type}
         disabled={disabled}
