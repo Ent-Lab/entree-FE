@@ -10,6 +10,7 @@ describe('Input', () => {
       <Input
         label={'test'}
         value={'테스트'}
+        size={'sm'}
         type='text'
         placeholder='테스트'
         disabled={false}
@@ -30,6 +31,7 @@ describe('Input', () => {
         <Input
           label={'test'}
           type='text'
+          size={'sm'}
           placeholder='테스트'
           disabled={false}
           onChange={onChangeHandler}
