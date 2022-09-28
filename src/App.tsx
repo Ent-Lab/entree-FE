@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme, GlobalStyle } from '@/style';
 import Button from './components/Button/Button';
 import Input from './components/Input/Input';
+import Avatar from './components/Avatar/Avatar';
 
 const App = () => {
   const onChangeHandler = (e) => {
@@ -30,6 +31,7 @@ const App = () => {
         disabled={false}
         onChange={onChangeHandler}
       />
+      <Avatar src="https://fakeimg.pl/250x100" size='lg' />
     </ThemeProvider>
   );
 };

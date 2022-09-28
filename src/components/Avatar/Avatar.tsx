@@ -15,8 +15,8 @@ export const SIZES = {
     --avatar-height: 20px;
   `,
   lg: css`
-    --avatar-width: 20px;
-    --avatar-height: 20px;
+    --avatar-width: 50px;
+    --avatar-height: 50px;
   `,
 };
 
@@ -30,5 +30,7 @@ export default function Avatar({ src, size }: AvatarProps) {
 
 const StyledImg = styled.img<StyledAvatarProps>`
   ${(p) => p.sizeStyle};
+  width: var(--avatar-width, 20px);
+  height: var(--avatar-height, 20px);
   border-radius: 99%;
 `;
