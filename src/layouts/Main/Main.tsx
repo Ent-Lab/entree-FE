@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
+import Header from "../Header/Header";
 import { StyledMainContainer } from "./Main.style";
 
 export default function Main() {
@@ -9,6 +10,7 @@ export default function Main() {
 
   return (
     <StyledMainContainer>
+      <Header />
       <Outlet />
     </StyledMainContainer>
   );

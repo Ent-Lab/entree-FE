@@ -1,13 +1,14 @@
 import 'sanitize.css';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme, GlobalStyle } from '@/style';
-import Main from './layouts/Main/Main';
+
+import AppRouter from './router';
 
 const App = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
-      <Main />
+      <AppRouter />
     </ThemeProvider>
   );
 };
