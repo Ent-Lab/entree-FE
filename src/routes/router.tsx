@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Main from '@/layouts/Main/Main';
+import HomePage from '@/pages/HomePage';
 
 export default function AppRouter() {
   return (
@@ -10,7 +11,25 @@ export default function AppRouter() {
           <Route
             path="/"
             element={
-              <div>HOME</div>
+              <HomePage />
+            }
+          />
+          <Route
+            path="/loadmap"
+            element={
+              <div>loadMap</div>
+            }
+          />
+          <Route
+            path="/career"
+            element={
+              <div>career</div>
+            }
+          />
+          <Route
+            path="/board"
+            element={
+              <div>board</div>
             }
           />
           <Route
