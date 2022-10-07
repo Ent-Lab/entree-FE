@@ -7,5 +7,8 @@ export const StyledSection = styled.div`
   width: 100%;
   height: 100%;
   justify-content: space-between;
+  background-color: ${(props) => props.theme.bgColor};
+  color: ${(props) => props.theme.textColor};
   gap: 20px;
+  transition: background 0.2s ease-in, color 0.2s ease-in;
 `;
