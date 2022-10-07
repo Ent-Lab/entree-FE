@@ -4,10 +4,11 @@ import { darkTheme, lightTheme, GlobalStyle } from '@/style';
 
 import { useRecoilState } from 'recoil';
 
+import { useLayoutEffect } from 'react';
+
 import { themeAtom } from './store/mode';
 
 import AppRouter from '@/routes/router';
-import { useLayoutEffect } from 'react';
 
 const App = () => {
   const [theme, setTheme] = useRecoilState(themeAtom);
