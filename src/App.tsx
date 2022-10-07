@@ -13,11 +13,18 @@ const App = () => {
   const [theme, setTheme] = useRecoilState(themeAtom);
 
   useLayoutEffect(() => {
-    const newTheme = localStorage.getItem('theme');
-    if (newTheme) {
-      setTheme(newTheme);
-    } else {
-      localStorage.setItem('theme', theme);
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme && ['dark', 'light'].includes(currentTheme)) {
+      setTheme(currentTheme);
+      return;
+    }
+
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      setTheme('dark');
     }
   }, []);
 
