@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledHeader = styled.div`
+  z-index: 1;
   position: fixed;
   top: 0px;
   display: flex;
@@ -12,8 +13,8 @@ export const StyledHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
-  background-color: #202020;
-  z-index: 1;
+  background-color: ${(props) => props.theme.headerColor};
+  transition: background 0.2s ease-in, color 0.2s ease-in;
 `;
 
 export const StyledLogoImg = styled.img`
