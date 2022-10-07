@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.div`
-  flex: 1;
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  gap: 20px;
 `;

@@ -2,7 +2,7 @@ import 'sanitize.css';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme, GlobalStyle } from '@/style';
 
-import AppRouter from './router';
+import AppRouter from '@/routes/router';
 
 const App = () => {
   return (

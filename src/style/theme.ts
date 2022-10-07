@@ -3,9 +3,12 @@ import { DefaultTheme } from "styled-components";
 export const darkTheme: DefaultTheme = {
   bgColor: "#333333",
   textColor: "#dff9fb",
-  accentColor: "#30336b",
+  accentColor: "white",
   cardColor: "dark",
-  inputColor: "whitesmoke"
+  inputColor: "whitesmoke",
+  buttonColor: "whitesmoke",
+  buttonTextColor: "#333333",
+  hoverButtonText: "dark",
 };
 
 export const lightTheme: DefaultTheme = {
@@ -13,5 +16,8 @@ export const lightTheme: DefaultTheme = {
   textColor: "#333333",
   accentColor: "#30336b",
   cardColor: "whitesmoke",
-  inputColor: "dark"
+  inputColor: "dark",
+  buttonColor: "#333333",
+  buttonTextColor: "whitesmoke",
+  hoverButtonText: "white",
 };
