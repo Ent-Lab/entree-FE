@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import { AuthRouter } from './AuthRouter';
+
 import Main from '@/layouts/Main/Main';
 import HomePage from '@/pages/HomePage';
 
@@ -12,6 +14,18 @@ export default function AppRouter() {
             path="/"
             element={
               <HomePage />
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <div>login</div>
+            }
+          />
+          <Route
+            path="/register"
+            element={
+              <div>register</div>
             }
           />
           <Route
@@ -35,13 +49,17 @@ export default function AppRouter() {
           <Route
             path="/bookmark"
             element={
-              <div>bookmark</div>
+              <AuthRouter>
+                <div>bookmark</div>
+              </AuthRouter>
             }
           />
           <Route
             path="/profile"
             element={
-              <div>profile</div>
+              <AuthRouter>
+                <div>profile</div>
+              </AuthRouter>
             }
           />
         </Route>
