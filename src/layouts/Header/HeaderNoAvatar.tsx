@@ -1,6 +1,10 @@
-import ReactPortal from "@/components/Modal/ReactPortal";
-import { useToggleModal } from "@/utils/hooks";
 import styled from "styled-components";
+
+import ReactPortal from "@/layouts/Modal/ReactPortal";
+
+import { useToggleModal } from "@/utils/hooks";
+
+import AuthPage from "@/pages/AuthPage/AuthPage";
 
 export default function HeaderNoAvatar() {
   const { modalState, toggleModal } = useToggleModal();
@@ -15,7 +19,7 @@ export default function HeaderNoAvatar() {
       </StyledButton>
       {modalState &&
         <ReactPortal>
-          <div>로그인창</div>
+          <AuthPage />
         </ReactPortal>
       }
     </>
@@ -27,4 +31,5 @@ const StyledButton = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color : ${(props) => props.theme.textColor}
 `;
