@@ -20,6 +20,7 @@
     "checkJs": true /* Report errors in .js files. Works in tandem with allowJs. */,
     "baseUrl": ".",
     "types": [
+      "node",
       "jest",
       "@testing-library/jest-dom",
       "@testing-library/react",
