@@ -4,9 +4,10 @@ export interface InputProps {
   label: string;
   value?: string;
   type?: string;
+  name?: string;
   size: 'sm' | 'md' | 'lg' | 'xlg';
-  placeholder: string;
-  disabled: boolean;
+  placeholder?: string;
+  disabled?: boolean;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
