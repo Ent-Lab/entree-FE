@@ -1,22 +1,21 @@
 import { InputProps } from "@/types/input";
-import { StyledInput } from "./Input.style";
+
 import { SIZES } from "./Input.variant";
 
-export default function Input({ label, size, type, placeholder, disabled, onChange }: InputProps) {
+import { StyledInput, StyledLabel } from "./Input.style";
+
+export default function Input({ label, size, ...rest }: InputProps) {
   const sizeStyle = SIZES[size];
 
   return (
     <>
-      <label htmlFor={`${label}-input`}>
+      <StyledLabel htmlFor={`${label}-input`}>
         {label}
-      </label>
+      </StyledLabel>
       <StyledInput
         id={`${label}-input`}
         sizeStyle={sizeStyle}
-        type={type}
-        disabled={disabled}
-        placeholder={placeholder}
-        onChange={onChange}
+        {...rest}
       />
     </>
   );
