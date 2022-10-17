@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthRouter } from './AuthRouter';
 
 import Main from '@/layouts/Main/Main';
-import HomePage from '@/pages/HomePage';
+import HomePage from '@/pages/HomePage/HomePage';
+import AuthPage from '@/pages/AuthPage/AuthPage';
 
 export default function AppRouter() {
   return (
@@ -19,7 +20,7 @@ export default function AppRouter() {
           <Route
             path="/login"
             element={
-              <div>login</div>
+              <AuthPage />
             }
           />
           <Route
