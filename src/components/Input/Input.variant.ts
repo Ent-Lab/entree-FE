@@ -2,19 +2,19 @@ import { css } from "styled-components";
 
 export const SIZES = {
   sm: css`
-    --input-witdh: 160px;
-    --input-height: 48px;
+    --input-width: 160px;
+    --input-height: 28px;
   `,
   md: css`
-    --input-witdh: 310px;
-    --input-height: 48px;
+    --input-width: 310px;
+    --input-height: 34px;
   `,
   lg: css`
-    --input-witdh: 500px;
-    --input-height: 56px;
+    --input-width: 350px;
+    --input-height: 42px;
   `,
   xlg: css`
-    --button-padding: 450px;
-    --button-radius: 73px;
+    --input-width: 400px;
+    --input-height: 42px;
   `,
 };
