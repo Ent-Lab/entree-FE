@@ -41,8 +41,8 @@ const StyledSibebarLink = styled(NavLink)`
   }
 
   &:hover{
-    color: ${(props) => props.theme.buttonTextColor};
-    background-color: ${(props) => props.theme.buttonColor};
+    color: ${(props) => props.theme.textColor};
+    background-color: ${(props) => props.theme.cardColor};
     box-shadow: 0 5px 18px -7px rgba(0,0,0,1);
   }
 `;
