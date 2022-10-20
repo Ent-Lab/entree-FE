@@ -2,6 +2,8 @@ import { useState } from "react";
 import {
   StyledCategories,
   StyledCategoriesWrapper,
+  StyledCategory,
+  StyledCategoryButton,
   StyledHomePage,
   StyledLoadmapWrapper,
   StyledSelectButton
@@ -15,6 +17,11 @@ export default function HomePage() {
     setIsToggled((currentState) => !currentState);
   };
 
+  const handleSelectCategory = (category) => {
+    setSelectedCategory(category);
+    setIsToggled((currentState) => !currentState);
+  };
+
   return (
     <StyledHomePage>
       <StyledCategoriesWrapper>
@@ -25,16 +32,38 @@ export default function HomePage() {
         />
         {isToggled &&
           <StyledCategories >
-            <li>
-              <button type="button" >
-                Python
-              </button>
-            </li>
-            <li>
-              <button type="button" >
-                Java
-              </button>
-            </li>
+            <StyledCategory>
+              <StyledCategoryButton
+                type="button"
+                onClick={() => handleSelectCategory('Front-End')}
+              >
+                Front-End
+              </StyledCategoryButton>
+            </StyledCategory>
+            <StyledCategory>
+              <StyledCategoryButton
+                type="button"
+                onClick={() => handleSelectCategory('Back-End')}
+              >
+                Back-End
+              </StyledCategoryButton>
+            </StyledCategory>
+            <StyledCategory>
+              <StyledCategoryButton
+                type="button"
+                onClick={() => handleSelectCategory('DevOps')}
+              >
+                DevOps
+              </StyledCategoryButton>
+            </StyledCategory>
+            <StyledCategory>
+              <StyledCategoryButton
+                type="button"
+                onClick={() => handleSelectCategory('QA')}
+              >
+                QA
+              </StyledCategoryButton>
+            </StyledCategory>
           </StyledCategories>
         }
       </StyledCategoriesWrapper>
