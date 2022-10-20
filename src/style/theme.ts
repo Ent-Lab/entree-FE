@@ -2,9 +2,9 @@ import { DefaultTheme } from "styled-components";
 
 export const darkTheme: DefaultTheme = {
   headerColor: "#202020",
-  bgColor: "#333333",
-  textColor: "#dff9fb",
-  accentColor: "white",
+  bgColor: "#121212",
+  textColor: "#ECECEC",
+  accentColor: "#dff9fb",
   cardColor: "#333333",
   inputColor: "whitesmoke",
   buttonColor: "whitesmoke",
