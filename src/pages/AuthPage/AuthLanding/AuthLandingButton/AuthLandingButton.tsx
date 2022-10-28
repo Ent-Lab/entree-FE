@@ -11,7 +11,7 @@ import {
 
 import { ACCESS_TYPE } from '@/utils/constants';
 
-import { AuthLandingButtonProps } from '@/types/auth';
+import { AuthLandingButtonProps } from '@/utils/types/auth';
 
 export default function AuthLandingButton({ authHandler, changeAccessType }: AuthLandingButtonProps) {
   return (

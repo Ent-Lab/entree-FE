@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledAvatarProps } from "@/types/avatar";
+import { StyledAvatarProps } from "@/utils/types/avatar";
 
 export const StyledImg = styled.img<StyledAvatarProps>`
   ${(p) => p.sizeStyle};

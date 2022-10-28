@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import { ACCESS_TYPE, initialUserInfo } from "@/utils/constants";
 
-import { AuthProps } from "@/types/auth";
+import { AuthProps } from "@/utils/types/auth";
 
 import { validationUserLogin, validationUserRegister } from "@/utils/functions";
 

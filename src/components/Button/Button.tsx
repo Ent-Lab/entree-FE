@@ -1,5 +1,5 @@
 import { StyledButton } from "./Button.style";
-import { ButtonProps } from "@/types/button";
+import { ButtonProps } from "@/utils/types/button";
 import { SIZES, VARIANTS } from "./Button.variant";
 
 export default function Button({ disabled, size, variant, children, onClickHandler }: ButtonProps) {

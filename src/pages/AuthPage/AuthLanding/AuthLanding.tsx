@@ -1,4 +1,4 @@
-import { AuthLandingProps } from "@/types/auth";
+import { AuthLandingProps } from "@/utils/types/auth";
 
 import AuthLandingButton from "./AuthLandingButton/AuthLandingButton";
 import AuthLandingLogo from "./AuthLandingLogo/AuthLandingLogo";
