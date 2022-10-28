@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 export default function Sidebar() {
   return (
     <StyledSidebar>
-      <StyledSibebarLink to='/loadmap'>로드맵</StyledSibebarLink>
+      <StyledSibebarLink to='/roadmap'>로드맵</StyledSibebarLink>
       <StyledSibebarLink to='/board'>게시판</StyledSibebarLink>
       <StyledSibebarLink to='/career'>채용정보</StyledSibebarLink>
     </StyledSidebar>
@@ -41,8 +41,8 @@ const StyledSibebarLink = styled(NavLink)`
   }
 
   &:hover{
-    color: ${(props) => props.theme.buttonTextColor};
-    background-color: ${(props) => props.theme.buttonColor};
+    color: ${(props) => props.theme.textColor};
+    background-color: ${(props) => props.theme.cardColor};
     box-shadow: 0 5px 18px -7px rgba(0,0,0,1);
   }
 `;

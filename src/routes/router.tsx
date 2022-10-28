@@ -30,9 +30,9 @@ export default function AppRouter() {
             }
           />
           <Route
-            path="/loadmap"
+            path="/roadmap"
             element={
-              <div>loadMap</div>
+              <div>RoadMap</div>
             }
           />
           <Route
