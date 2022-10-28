@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { ACCESS_TYPE, initialUserInfo } from "@/constants";
+import { ACCESS_TYPE, initialUserInfo } from "@/utils/constants";
 
 import { AuthProps } from "@/types/auth";
 

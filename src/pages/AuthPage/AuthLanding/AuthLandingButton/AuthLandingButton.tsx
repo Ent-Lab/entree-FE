@@ -9,7 +9,7 @@ import {
   StyledLoginButton
 } from './AuthLandingButton.style';
 
-import { ACCESS_TYPE } from '@/constants';
+import { ACCESS_TYPE } from '@/utils/constants';
 
 import { AuthLandingButtonProps } from '@/types/auth';
 
