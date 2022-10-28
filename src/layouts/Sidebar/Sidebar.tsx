@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 export default function Sidebar() {
   return (
     <StyledSidebar>
-      <StyledSibebarLink to='/loadmap'>로드맵</StyledSibebarLink>
+      <StyledSibebarLink to='/roadmap'>로드맵</StyledSibebarLink>
       <StyledSibebarLink to='/board'>게시판</StyledSibebarLink>
       <StyledSibebarLink to='/career'>채용정보</StyledSibebarLink>
     </StyledSidebar>
