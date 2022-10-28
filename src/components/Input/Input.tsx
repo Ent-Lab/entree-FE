@@ -1,4 +1,4 @@
-import { InputProps } from "@/types/input";
+import { InputProps } from "@/utils/types/input";
 
 import { SIZES } from "./Input.variant";
 

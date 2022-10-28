@@ -1,4 +1,4 @@
-import { AvatarProps } from "@/types/avatar";
+import { AvatarProps } from "@/utils/types/avatar";
 import { StyledImg } from "./Avatar.style";
 import { SIZES } from "./Avatar.variant";
 

@@ -1,4 +1,4 @@
-import { CATEGORY_LIST } from "@/constants/categories";
+import { CATEGORY_LIST } from "@/utils/constants/categories";
 
 import {
   StyledCategories,

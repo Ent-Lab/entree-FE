@@ -1,4 +1,4 @@
-import { ACCESS_TYPE } from "@/constants";
+import { ACCESS_TYPE } from "@/utils/constants";
 
 import { useAccessTypeState } from "@/utils/hooks";
 

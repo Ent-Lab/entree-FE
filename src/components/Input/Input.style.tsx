@@ -1,4 +1,4 @@
-import { StyledInputProps } from "@/types/input";
+import { StyledInputProps } from "@/utils/types/input";
 
 import styled from "styled-components";
 

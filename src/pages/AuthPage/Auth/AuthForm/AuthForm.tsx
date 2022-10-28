@@ -1,11 +1,11 @@
-import { ACCESS_TYPE } from '@/constants';
+import { ACCESS_TYPE } from '@/utils/constants';
 
 import AuthContent from '../AuthContent/AuthContent';
 import Input from '@/components/Input/Input';
 import AuthButton from '../AuthButton/AuthButton';
 
 import { StyledInputWrapper } from './AuthForm.style';
-import { AuthFormProps } from '@/types/auth';
+import { AuthFormProps } from '@/utils/types/auth';
 
 export default function AuthForm(
   {
