@@ -1,18 +1,13 @@
-
 import CategoriesContainer from "./Categories/CategoriesContainer/CategoriesContainer";
+import RoadmapContainer from "./Roadmap/RoadmapContainer/RoadmapContainer";
 
-import {
-  StyledHomePage,
-  StyledLoadmapWrapper,
-} from "./HomePage.style";
+import { StyledHomePage } from "./HomePage.style";
 
 export default function HomePage() {
   return (
     <StyledHomePage>
       <CategoriesContainer />
-      <StyledLoadmapWrapper>
-        loadmap
-      </StyledLoadmapWrapper>
+      <RoadmapContainer />
     </StyledHomePage>
   );
 };

@@ -11,8 +11,3 @@ export const StyledHomePage = styled.div`
   align-items: center;
   padding: 50px;
 `;
-
-export const StyledLoadmapWrapper = styled.div`
-  width: 100%;
-  height: 90%;
-`;
