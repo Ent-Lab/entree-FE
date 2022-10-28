@@ -8,7 +8,7 @@ import { useLayoutEffect } from 'react';
 
 import { themeAtom } from './store/mode';
 
-import AppRouter from './routes/Router';
+import AppRouter from './routes/router';
 
 const App = () => {
   const [theme, setTheme] = useRecoilState(themeAtom);
