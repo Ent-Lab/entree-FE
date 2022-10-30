@@ -1,9 +1,9 @@
-import styled from "styled-components";
-
 import { useEffect, useState } from "react";
 
 import ReactMarkDown from "react-markdown";
 import remarkGfm from "remark-gfm";
+
+import { StyledMarkdown } from "./MarkdownRenderer.style";
 
 export default function MarkdownRenderer({ markdown }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,7 +25,3 @@ export default function MarkdownRenderer({ markdown }) {
     </StyledMarkdown>
   );
 }
-
-export const StyledMarkdown = styled.div`
-  line-height: 2.5rem;
-`;
