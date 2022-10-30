@@ -1,6 +1,7 @@
-import styled from "styled-components";
 import BoardComments from "../BoardComments/BoardComments";
 import BoardContents from "../BoardContents/BoardContents";
+
+import { StyledBoardDetailContainer } from "./BoardDetailContainer.style";
 
 const boardDetail = {
   id: 1,
@@ -35,13 +36,3 @@ export default function BoardDetailContainer({ boardId }) {
     </StyledBoardDetailContainer>
   );
 }
-const StyledBoardDetailContainer = styled.div`
-  width: 100%;
-  max-height: 200%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: ${(props) => props.theme.cardColor};
-  
-  padding: 20px;
-`;

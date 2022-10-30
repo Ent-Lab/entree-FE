@@ -1,10 +1,22 @@
-import styled from "styled-components";
-
-import { BiLike } from "@react-icons/all-files/bi/BiLike";
-import { BiComment } from "@react-icons/all-files/bi/BiComment";
 import MarkdownRenderer from "@/components/MarkdownRenderer/MarkdownRenderer";
 import Avatar from "@/components/Avatar/Avatar";
 import BoardDetailTags from "../BoardDetailTags/BoardDetailTags";
+
+import {
+  StyledAutorInfo,
+  StyledBoardContents,
+  StyledBoardFooter,
+  StyledBoardHeader,
+  StyledBoardMain,
+  StyledBoardStats,
+  StyledBoardTitle,
+  StyledCommentIcon,
+  StyledLike,
+  StyledLikeText,
+  StyledLikeWrapper,
+  StyledStatWrapper,
+  StyledTextStat
+} from "./BoardContents.style";
 
 const boardDetail = {
   id: 1,
@@ -86,90 +98,3 @@ export default function BoardContents() {
     </StyledBoardContents>
   );
 }
-
-const StyledBoardContents = styled.div`
-  width: 100%;
-  min-height: 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-`;
-
-const StyledBoardHeader = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid ${(props) => props.theme.borderBottom};
-`;
-
-const StyledBoardTitle = styled.span`
-  font-size: 3rem;
-  font-weight: 500;
-  cursor: text;
-`;
-
-const StyledBoardStats = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 15px;
-  color: gray;
-`;
-
-const StyledStatWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-`;
-
-const StyledAutorInfo = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  justify-content: center;
-  align-items: center;
-`;
-
-const StyledTextStat = styled.span`
-  color: ${(props) => props.theme.textColor};
-`;
-
-const StyledBoardMain = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-`;
-
-const StyledBoardFooter = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid ${(props) => props.theme.borderBottom};
-`;
-
-const StyledLikeWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-`;
-
-const StyledLike = styled(BiLike)`
-  font-size: 3rem;
-  cursor: pointer;
-`;
-
-const StyledCommentIcon = styled(BiComment)`
-  font-size: 3rem;
-`;
-
-const StyledLikeText = styled(StyledTextStat)`
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  font-size: 2.2rem;
-  font-weight: 500;
-`;
