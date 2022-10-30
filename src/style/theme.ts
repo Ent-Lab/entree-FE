@@ -4,7 +4,7 @@ export const darkTheme: DefaultTheme = {
   headerColor: "#202020",
   bgColor: "#121212",
   textColor: "#ECECEC",
-  accentColor: "#dff9fb",
+  accentColor: "#6060f9",
   cardColor: "#333333",
   inputColor: "whitesmoke",
   buttonColor: "whitesmoke",

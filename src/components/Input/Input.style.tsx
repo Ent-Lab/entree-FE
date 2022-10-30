@@ -7,9 +7,10 @@ export const StyledInput = styled.input<StyledInputProps>`
   width: var(--input-width, 300px);
   height: var(--input-height, 34px);
   border: none;
-  border-radius: 10px;
-  background-color: whitesmoke;
-  padding: 1rem;
+  border-bottom: 1px solid ${(props) => props.theme.textColor};
+  color: inherit;
+  background-color: transparent;
+  caret-color: ${(props) => props.theme.textColor};
   outline: none;
 `;
 
