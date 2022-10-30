@@ -5,6 +5,7 @@ import { AuthRouter } from './AuthRouter';
 import Main from '@/layouts/Main/Main';
 import HomePage from '@/pages/HomePage/HomePage';
 import AuthPage from '@/pages/AuthPage/AuthPage';
+import BoardPage from '@/pages/BoardPage/BoardPage';
 
 export default function AppRouter() {
   return (
@@ -44,7 +45,7 @@ export default function AppRouter() {
           <Route
             path="/board"
             element={
-              <div>board</div>
+              <BoardPage />
             }
           />
           <Route
