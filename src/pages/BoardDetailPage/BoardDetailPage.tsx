@@ -1,9 +1,15 @@
+import { useParams } from "react-router-dom";
+
 import styled from "styled-components";
 
+import BoardDetailContainer from "./BoardDetailContainer/BoardDetailContainer";
+
 export default function BoardDetailPage() {
+  const { boardId } = useParams();
+
   return (
     <StyledBoard>
-      <div>Detail</div>
+      <BoardDetailContainer boardId={boardId} />
     </StyledBoard>
   );
 }
