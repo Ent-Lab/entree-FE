@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate
+} from 'react-router-dom';
 
 import { AuthRouter } from './AuthRouter';
 
@@ -6,6 +11,7 @@ import Main from '@/layouts/Main/Main';
 import HomePage from '@/pages/HomePage/HomePage';
 import AuthPage from '@/pages/AuthPage/AuthPage';
 import BoardPage from '@/pages/BoardPage/BoardPage';
+import BoardDetailPage from '@/pages/BoardDetailPage/BoardDetailPage';
 
 export default function AppRouter() {
   return (
@@ -15,7 +21,7 @@ export default function AppRouter() {
           <Route
             path="/"
             element={
-              <HomePage />
+              <Navigate to="/roadmap" />
             }
           />
           <Route
@@ -33,7 +39,7 @@ export default function AppRouter() {
           <Route
             path="/roadmap"
             element={
-              <div>RoadMap</div>
+              <HomePage />
             }
           />
           <Route
@@ -43,9 +49,15 @@ export default function AppRouter() {
             }
           />
           <Route
-            path="/board"
+            path="/boards"
             element={
               <BoardPage />
+            }
+          />
+          <Route
+            path="/board/:boardId"
+            element={
+              <BoardDetailPage />
             }
           />
           <Route
