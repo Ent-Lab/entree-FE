@@ -5,6 +5,7 @@ import remarkGfm from "remark-gfm";
 
 import { StyledMarkdown } from "./MarkdownRenderer.style";
 
+
 export default function MarkdownRenderer({ markdown }) {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -21,7 +22,6 @@ export default function MarkdownRenderer({ markdown }) {
         :
         <ReactMarkDown remarkPlugins={[remarkGfm]} children={markdown} />
       }
-
     </StyledMarkdown>
   );
 }

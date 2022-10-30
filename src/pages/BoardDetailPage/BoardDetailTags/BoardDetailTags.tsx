@@ -4,14 +4,15 @@ import {
 } from "./BoardDetailTags.style";
 
 const tags = [
-  'react', 'html'
+  { id: 1, name: 'react' },
+  { id: 3, name: 'css' },
 ];
 
 export default function BoardDetailTags() {
   return (
     <StyledBoardDetailTags>
       {tags.map((tag) => (
-        <StyledBoardDetailTag>{tag}</StyledBoardDetailTag>
+        <StyledBoardDetailTag key={tag.id}>{tag.name}</StyledBoardDetailTag>
       ))}
     </StyledBoardDetailTags>
   );

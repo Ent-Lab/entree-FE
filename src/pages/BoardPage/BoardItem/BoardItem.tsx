@@ -64,8 +64,8 @@ export default function BoardItem({ board }) {
         <StyledSummaryContentInfo>
           <StyledTags>
             {tags.map((tag) => (
-              <StyledTag>
-                {tag}
+              <StyledTag key={tag.id}>
+                {tag.name}
               </StyledTag>
             ))}
           </StyledTags>
