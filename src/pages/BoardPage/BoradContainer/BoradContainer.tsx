@@ -4,9 +4,13 @@ import BoardList from "../BoardList/BoardList";
 import BoardSearch from "../BoardSearch/BoardSearch";
 
 export default function BoradContainer() {
+  const searchInputHandler = (value: string) => {
+    console.log(value);
+  };
+
   return (
     <StyledBoardContainer>
-      <BoardSearch />
+      <BoardSearch onChange={searchInputHandler} />
       <BoardList />
     </StyledBoardContainer>
   );
