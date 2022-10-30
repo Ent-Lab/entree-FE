@@ -13,7 +13,8 @@ const boardList = [
     title: 'Lorem ipsum dolor sit',
     summary_description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis dolorem, cum sit alias tempora amet voluptate maiores aperiam voluptates nisi delectus quas,',
     tags: [
-      'react', 'html'
+      { id: 1, name: 'react' },
+      { id: 3, name: 'css' },
     ]
   },
   {
@@ -26,7 +27,9 @@ const boardList = [
     title: 'Lorem ipsum dolor sit22',
     summary_description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
     tags: [
-      'react', 'html', '2312322'
+      { id: 1, name: 'react' },
+      { id: 3, name: 'css' },
+      { id: 4, name: 'asdasd' }
     ]
   },
   {
@@ -39,7 +42,8 @@ const boardList = [
     title: 'Lorem ipsum dolor sit22666666',
     summary_description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis dolorem, cum sit alias tempora amet voluptate maiores ',
     tags: [
-      'react', 'html', 'css', 'asdasd'
+      { id: 1, name: 'react' },
+      { id: 2, name: 'html' },
     ]
   },
   {
@@ -51,7 +55,10 @@ const boardList = [
     title: 'Lorem ipsum dolor sit22666666',
     summary_description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis dolorem, cum sit alias tempora amet voluptate maiores ',
     tags: [
-      'react', 'html', 'css', 'asdasd', 'a888', '22323'
+      { id: 1, name: 'react' },
+      { id: 2, name: 'html' },
+      { id: 3, name: 'css' },
+      { id: 4, name: 'asdasd' }
     ]
   }
 ];
@@ -60,7 +67,7 @@ export default function BoardList() {
   return (
     <StyledBoardList>
       {boardList.map((board) => (
-        <BoardItem board={board} />
+        <BoardItem key={board.id} board={board} />
       ))}
     </StyledBoardList>
   );

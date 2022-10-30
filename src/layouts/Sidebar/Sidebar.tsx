@@ -6,7 +6,7 @@ export default function Sidebar() {
   return (
     <StyledSidebar>
       <StyledSibebarLink to='/roadmap'>로드맵</StyledSibebarLink>
-      <StyledSibebarLink to='/board'>게시판</StyledSibebarLink>
+      <StyledSibebarLink to='/boards'>게시판</StyledSibebarLink>
       <StyledSibebarLink to='/career'>채용정보</StyledSibebarLink>
     </StyledSidebar>
   );
