@@ -12,6 +12,7 @@ import HomePage from '@/pages/HomePage/HomePage';
 import AuthPage from '@/pages/AuthPage/AuthPage';
 import BoardPage from '@/pages/BoardPage/BoardPage';
 import BoardDetailPage from '@/pages/BoardDetailPage/BoardDetailPage';
+import CareerPage from '@/pages/CareerPage/CareerPage';
 
 export default function AppRouter() {
   return (
@@ -45,7 +46,7 @@ export default function AppRouter() {
           <Route
             path="/career"
             element={
-              <div>career</div>
+              <CareerPage />
             }
           />
           <Route
