@@ -5,7 +5,7 @@ import { BiComment } from "@react-icons/all-files/bi/BiComment";
 
 export const StyledBoardContents = styled.div`
   width: 100%;
-  min-height: 60%;
+  
   display: flex;
   flex-direction: column;
   gap: 30px;

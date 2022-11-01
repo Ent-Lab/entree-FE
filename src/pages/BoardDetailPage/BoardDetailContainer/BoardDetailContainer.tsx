@@ -1,3 +1,4 @@
+import BoardCommentForm from "../BoardCommentForm/BoardCommentForm";
 import BoardComments from "../BoardComments/BoardComments";
 import BoardContents from "../BoardContents/BoardContents";
 
@@ -33,6 +34,7 @@ export default function BoardDetailContainer({ boardId }) {
     <StyledBoardDetailContainer>
       <BoardContents />
       <BoardComments />
+      <BoardCommentForm />
     </StyledBoardDetailContainer>
   );
 }
