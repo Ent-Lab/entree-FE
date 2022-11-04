@@ -1,20 +1,29 @@
 import styled from 'styled-components';
 
+import CareerContainer from './CareerContainer/CareerContainer';
+
 export default function CareerPage() {
   return (
     <StyledCareer>
-      CareerPage
+      <CareerContainer />
     </StyledCareer>
   );
 }
 
 const StyledCareer = styled.div`
-  position: relative;
   width: 80%;
-  height: calc(100vh - 70px);
-  margin-top: 70px;
+  min-height: 100%;  
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 50px 100px 50px 50px;
+  padding: 50px 50px 50px 50px;
+
+  @media screen and (min-width: 768px) {
+    
+  }
+
+  @media screen and (min-width: 1024px) {
+    
+  }
 `;
