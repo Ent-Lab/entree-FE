@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import BoardList from "../BoardList/BoardList";
-import BoardSearch from "../BoardSearch/BoardSearch";
+import SearchForm from "@/components/SearchForm/SearchForm";
 
 export default function BoradContainer() {
   const searchInputHandler = (value: string) => {
@@ -10,7 +10,7 @@ export default function BoradContainer() {
 
   return (
     <StyledBoardContainer>
-      <BoardSearch onChange={searchInputHandler} />
+      <SearchForm onChange={searchInputHandler} />
       <BoardList />
     </StyledBoardContainer>
   );
