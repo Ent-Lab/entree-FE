@@ -18,18 +18,18 @@ const StyledSidebar = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 150px;
   height: 250px;
   top: 0px;
   left: 0px;
   gap: 10px;
   border-radius: 20px;
-  margin-top: 70px;
+  margin-top: 40px;
 `;
 
 const StyledSibebarLink = styled(NavLink)`
   font-size: 1.7rem;
-  width: 150px;
+  width: 140px;
   padding: 10px 15px;
   border-radius: 15px;
   text-align: center;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const StyledBoardItem = styled.div`
   width: 100%;
-  height: 25%;
+  height: 35%;
   display: flex;
   justify-content: center;
   align-items: center;

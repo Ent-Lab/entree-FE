@@ -1,25 +1,25 @@
 import styled from "styled-components";
 
-import BoardList from "../BoardList/BoardList";
 import SearchForm from "@/components/SearchForm/SearchForm";
+import CareerTagFilter from "../CareerTagFilter/CareerTagFilter";
 
-export default function BoradContainer() {
+export default function CareerHeader() {
+
   const searchInputHandler = (value: string) => {
     console.log(value);
   };
 
   return (
-    <StyledBoardContainer>
+    <StyledCareerHeader>
+      <CareerTagFilter />
       <SearchForm onChange={searchInputHandler} />
-      <BoardList />
-    </StyledBoardContainer>
+    </StyledCareerHeader>
   );
 }
 
-const StyledBoardContainer = styled.div`
+const StyledCareerHeader = styled.div`
   width: 100%;
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
 `;

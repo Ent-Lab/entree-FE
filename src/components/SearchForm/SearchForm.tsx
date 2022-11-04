@@ -4,23 +4,23 @@ import styled from "styled-components";
 
 import { BsSearch } from "@react-icons/all-files/bs/BsSearch";
 
-export default function BoardSearch({ onChange }) {
+export default function SearchForm({ onChange }) {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { target: { value } } = event;
     onChange(value);
   };
 
   return (
-    <StyledBoardSearch>
+    <StyledSearchWrapper>
       <StyledSearch>
         <BsSearch />
       </StyledSearch>
       <Input label="search" size="sm" onChange={handleChange} />
-    </StyledBoardSearch >
+    </StyledSearchWrapper >
   );
 }
 
-const StyledBoardSearch = styled.div`
+const StyledSearchWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row-reverse;

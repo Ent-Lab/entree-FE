@@ -17,8 +17,7 @@ export default function BoardDetailPage() {
 const StyledBoard = styled.div`
   position: relative;
   width: 80%;
-  height: calc(100vh - 70px);
-  margin-top: 70px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
