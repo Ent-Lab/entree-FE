@@ -10,7 +10,8 @@ export const darkTheme: DefaultTheme = {
   buttonColor: "whitesmoke",
   buttonTextColor: "#333333",
   hoverButtonText: "dark",
-  borderBottom: "#121212"
+  borderBottom: "#121212",
+  boxShadow: "#292929",
 };
 
 export const lightTheme: DefaultTheme = {
@@ -23,5 +24,6 @@ export const lightTheme: DefaultTheme = {
   buttonColor: "white",
   buttonTextColor: "#333333",
   hoverButtonText: "white",
-  borderBottom: "lightgray"
+  borderBottom: "lightgray",
+  boxShadow: "#292929",
 };
