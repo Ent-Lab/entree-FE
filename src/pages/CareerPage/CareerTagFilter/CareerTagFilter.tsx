@@ -1,82 +1,74 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import CareerSearchTag from "../CareerSearchTag/CareerSearchTag";
+import CareerSearchTag from '../CareerSearchTag/CareerSearchTag'
 
 interface tagProps {
-  id: number,
-  name: string;
+  id: number
+  name: string
 }
 
 const tags_data = [
   {
     id: 1,
-    name: 'react'
+    name: 'react',
   },
   {
     id: 2,
-    name: 'javascript'
+    name: 'javascript',
   },
   {
     id: 3,
-    name: 'frontend'
+    name: 'frontend',
   },
   {
     id: 4,
-    name: 'backend'
+    name: 'backend',
   },
   {
     id: 5,
-    name: 'devops'
+    name: 'devops',
   },
-];
+]
 
 export default function CareerTagFilter() {
-  const [toggleInput, setToggleInput] = useState(false);
-  const [selectedTags, setSelectedTags] = useState([]);
-  const [tagData, setTagData] = useState([]);
+  const [toggleInput, setToggleInput] = useState(false)
+  const [selectedTags, setSelectedTags] = useState([])
+  const [tagData, setTagData] = useState([])
 
   const handleToggleInput = () => {
-    setToggleInput((currentState) => !currentState);
-  };
+    setToggleInput((currentState) => !currentState)
+  }
 
   const handleSelectedTag = (id: number, name: string) => {
     const newTag = {
       id,
-      name
-    };
-  };
+      name,
+    }
+  }
 
   useEffect(() => {
-    setTagData(tagData);
-  }, []);
+    setTagData(tagData)
+  }, [])
 
   return (
     <StyledTagFilterWrapper>
       <input onClick={handleToggleInput} />
       <div>
         {selectedTags.map((tag: tagProps) => (
-          <CareerSearchTag
-            key={tag.id}
-            tag={tag}
-            onClick={handleSelectedTag}
-          />
+          <CareerSearchTag key={tag.id} tag={tag} onClick={handleSelectedTag} />
         ))}
       </div>
-      {toggleInput &&
+      {toggleInput && (
         <StyledSearchResult>
           {tags_data.map((tag: tagProps) => (
-            <CareerSearchTag
-              key={tag.id}
-              tag={tag}
-              onClick={handleSelectedTag}
-            />
+            <CareerSearchTag key={tag.id} tag={tag} onClick={handleSelectedTag} />
           ))}
         </StyledSearchResult>
-      }
+      )}
     </StyledTagFilterWrapper>
-  );
+  )
 }
 
 const StyledTagFilterWrapper = styled.div`
@@ -86,7 +78,7 @@ const StyledTagFilterWrapper = styled.div`
   border: 1px solid ${(props) => props.theme.borderBottom};
   background-color: ${(props) => props.theme.cardColor};
   cursor: text;
-`;
+`
 
 const StyledSearchResult = styled.div`
   position: absolute;
@@ -100,4 +92,4 @@ const StyledSearchResult = styled.div`
   background-color: ${(props) => props.theme.cardColor};
   border: 1px soild ${(props) => props.theme.borderBottom};
   border-radius: 10px;
-`;
+`
