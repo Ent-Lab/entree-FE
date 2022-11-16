@@ -3,10 +3,7 @@
     "target": "ES6" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */,
     "module": "ESNext" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
     "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */ /* Type declaration files to be included in compilation. */,
-    "lib": [
-      "DOM",
-      "ESNext"
-    ] /* Specify library files to be included in the compilation. */,
+    "lib": ["DOM", "ESNext"] /* Specify library files to be included in the compilation. */,
     "noEmit": true /* Do not emit outputs. */,
     "jsx": "react-jsx",
     "isolatedModules": true /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */,
@@ -26,24 +23,13 @@
       "@testing-library/react",
       "@types/jest-plugin-context"
     ],
-    "typeRoots": [
-      "./types",
-      "./node_modules/@types"
-    ],
+    "typeRoots": ["./types", "./node_modules/@types"],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     }
   },
-  "include": [
-    "src/**/*",
-    "declarations.d.ts",
-    "**/*.test.tsx"
-  ],
-  "exclude": [
-    "node_modules",
-  ]
+  "include": ["src/**/*", "declarations.d.ts", "**/*.test.tsx"],
+  "exclude": ["node_modules"]
 }
 //  "compilerOptions": {
 //   "target": "es5", // 'es3', 'es5', 'es2015', 'es2016', 'es2017','es2018', 'esnext' 가능
